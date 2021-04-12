@@ -1,0 +1,123 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Libre Baskerville', serif;
+}   
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left,#fff 80%,#c3f5ff 20%);
+}
+.navsection{
+    
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background-image: linear-gradient(to top,#fff 70%,#c3f5ff 30%);
+}
+.logo{
+    width: 40%;
+    color:#fff;
+    background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    animation: agepiche 2s linear infinite;
+    animation-direction: alternate;
+    font-family:sans-serif;
+}
+
+@keyframes agepiche {
+         from{padding-left: 20px; }
+         to{padding-right: 40px; }    
+}
+nav{
+    
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size:medium;
+    position: relative;
+    
+}
+nav a:first-child{
+    color:rgb(76, 0, 255);
+}
+nav a::after{
+    content: "";
+    top: 100%;
+    width:0;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    border-bottom: 2px solid black;
+    transition: all 1s linear;
+    
+}
+nav a:hover::after{ 
+            width:100%;
+
+}
+main{
+    height: 80vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightside img{
+    border-radius: 30px;
+    
+  
+}
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+h1{
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    word-spacing: 20px;
+}
+.leftside a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px;
+    
+    border-radius: 10px;
+    font-weight: bold;
+}
+#hire{
+    
+    margin-right: 20px;
+    background-color: purple;
+    
+}
+#hire:hover{
+   background-color: turquoise;
+    
+}
+#contact{
+    color:black;
+    background-color: white;
+    margine-left:20px;
+    
+}
